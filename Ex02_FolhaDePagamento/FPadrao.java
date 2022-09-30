@@ -5,5 +5,7 @@ public class FPadrao extends Funcionario{
         super(matricula, nome, salario);// herda classe mãe
     }
 
-    
+    public double calcularProventos(){ 
+        return getSalario();
+    } 
 }

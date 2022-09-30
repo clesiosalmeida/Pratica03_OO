@@ -24,6 +24,9 @@ public class FProdutividade extends Funcionario {
         this.producao = producao;
     } 
 
-    
+    public double calcularProventos(){ 
+        //por produtividade: salário + adicional por unidade de produzida
+        return (getSalario()+(getProducao()*getValor()));
+    } 
     
 }

@@ -6,12 +6,14 @@ public class VIP extends Ingresso{
 
 
     public double valorAdicional;
+    private static int count=0;
 
     //Crie o construtor dessa classe com o valor do ingresso
 
     public VIP(double valorIngresso, double valorAdicional) {
         super(valorIngresso);
         this.valorAdicional = valorAdicional;
+        count++;
     }
 
     public double getValorAdicional() {
@@ -28,4 +30,8 @@ public class VIP extends Ingresso{
         return "Ingresso VIP " + (getValorIngresso()+ getValorAdicional());//💡 gets entre () para o compilador entende que é uma operação matemática
     } //💡 posso ter metodos com o mesmo nom em classes diferentes
     
+
+    public int numeroVIP(){
+        return count;
+    }
 }

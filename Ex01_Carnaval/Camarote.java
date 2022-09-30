@@ -4,7 +4,7 @@ package Ex01_Carnaval;
 public class Camarote extends Ingresso{
     private double valorAdicional;
     private String localizacao;
-    
+    private static int count=0;
     
     //Crieo construtor dessa classe com o valor do ingresso, valoradicional e localização do camarote
 
@@ -12,6 +12,7 @@ public class Camarote extends Ingresso{
         super(valorIngresso);
         this.valorAdicional = valorAdicional;
         this.localizacao = localizacao;
+        count++;
     } 
 
     
@@ -43,6 +44,10 @@ public class Camarote extends Ingresso{
     public String imprimeIngresso(){
         return "Ingresso Camarote " + (getValorIngresso()+getValorAdicional())+" "+getLocalizacao(); 
     }    
+
+    public int numeroCam(){
+        return count;
+    }
 
 
 

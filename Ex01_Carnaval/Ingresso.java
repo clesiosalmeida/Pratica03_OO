@@ -6,7 +6,7 @@ package Ex01_Carnaval;
 public class Ingresso {
 
     //Crie o construtor dessa classe e os métodos Set e Get
-    private double valorIngresso;
+    protected double valorIngresso;
 
     public double getValorIngresso() {
         return valorIngresso;

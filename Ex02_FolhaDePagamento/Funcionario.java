@@ -1,9 +1,9 @@
 /**
  * Funcionario
  */
-public class Funcionario {
+public abstract class Funcionario { //minha classe abstrata!🎨
 
-    //💡atributos
+    //🥪atributos
     private int matricula;
     private String nome;
     private double salario;
@@ -42,12 +42,16 @@ public class Funcionario {
     }
 
     
-    public void calcularProventos(){ // alterar para um retorno double
-        //parse Double 
-        System.out.println("Salário do funcionário "+getNome()+": "+getSalario()); 
-    } 
+    public abstract double calcularProventos();//metodo abstrato 🎨
+
+    @Override
+    public String toString() {
+        return "Funcionario [matricula=" + matricula + ", nome=" + nome + ", salario=" + salario + "]";
+    }
 
     
+
+
 
 }
 
